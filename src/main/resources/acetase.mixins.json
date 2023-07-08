@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.acenaomy.acetase.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "AceTASEMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

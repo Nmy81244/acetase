@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "acetase",
+	"version": "${version}",
+	"name": "AceTASE",
+	"description": "Whatever the hell i want tbh",
+	"authors": [
+		"NaomyACE"
+	],
+	"contact": {
+		"homepage": "NA",
+		"sources": "NA"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/acetase/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.acenaomy.acetase.AceTASE"
+		],
+		"client":[
+			"com.acenaomy.acetase.AceTASEClient"
+		],
+		"fabric-datagen": [
+			"com.acenaomy.acetase.AceTASEDataGenerator"
+		]
+	},
+	"mixins": [
+		"acetase.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
