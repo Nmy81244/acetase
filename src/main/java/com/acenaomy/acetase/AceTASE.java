@@ -1,5 +1,6 @@
 package com.acenaomy.acetase;
 
+import com.acenaomy.acetase.block.ModBlocks;
 import com.acenaomy.acetase.item.ModItemGroups;
 import com.acenaomy.acetase.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,8 @@ public class AceTASE implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -1,6 +1,7 @@
 package com.acenaomy.acetase.item;
 
 import com.acenaomy.acetase.AceTASE;
+import com.acenaomy.acetase.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,10 @@ public class ModItemGroups {
             new Identifier(AceTASE.MOD_ID, "acetase"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.acetase"))
                     .icon(() -> new ItemStack(ModItems.PURPURITE)).entries((displayContext, entries) -> {
+                        // Blocks
+                        entries.add(ModBlocks.PURPURITE_BLOCK);
+
+                        // Ingredients
                         entries.add(ModItems.PURPURITE);
                         entries.add(ModItems.PURPURITE_SHARD);
                     }).build());
